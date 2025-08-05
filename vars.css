@@ -1,0 +1,104 @@
+/* Figma Styles of your File */
+:root {
+  /* Colors */
+  --1: linear-gradient(
+    222.58deg,
+    rgba(146, 95, 1, 1) 0%,
+    rgba(248, 162, 2, 1) 100%
+  );
+
+  /* Fonts */
+  --h5-bold-font-family: SvnGilroy-Heavy, sans-serif;
+  --h5-bold-font-size: 90px;
+  --h5-bold-line-height: 130%;
+  --h5-bold-font-weight: 400;
+  --h5-bold-font-style: normal;
+  --h5-font-family: SquadaOne-Regular, sans-serif;
+  --h5-font-size: 90px;
+  --h5-line-height: 130%;
+  --h5-font-weight: 400;
+  --h5-font-style: normal;
+  --h4-font-family: SquadaOne-Regular, sans-serif;
+  --h4-font-size: 65px;
+  --h4-line-height: 130%;
+  --h4-font-weight: 400;
+  --h4-font-style: normal;
+  --h4-bold-font-family: SvnGilroy-Heavy, sans-serif;
+  --h4-bold-font-size: 65px;
+  --h4-bold-line-height: 130%;
+  --h4-bold-font-weight: 400;
+  --h4-bold-font-style: normal;
+  --h3-font-family: SquadaOne-Regular, sans-serif;
+  --h3-font-size: 46px;
+  --h3-line-height: 130%;
+  --h3-font-weight: 400;
+  --h3-font-style: normal;
+  --h3-bold-font-family: SvnGilroy-Heavy, sans-serif;
+  --h3-bold-font-size: 46px;
+  --h3-bold-line-height: 130%;
+  --h3-bold-font-weight: 400;
+  --h3-bold-font-style: normal;
+  --h2-font-family: SquadaOne-Regular, sans-serif;
+  --h2-font-size: 33px;
+  --h2-line-height: 130%;
+  --h2-font-weight: 400;
+  --h2-font-style: normal;
+  --h2-bold-font-family: SvnGilroy-Heavy, sans-serif;
+  --h2-bold-font-size: 33px;
+  --h2-bold-line-height: 130%;
+  --h2-bold-font-weight: 400;
+  --h2-bold-font-style: normal;
+  --h1-font-family: SvnGilroy-Regular, sans-serif;
+  --h1-font-size: 24px;
+  --h1-line-height: 130%;
+  --h1-font-weight: 400;
+  --h1-font-style: normal;
+  --h1-bold-font-family: SvnGilroy-Heavy, sans-serif;
+  --h1-bold-font-size: 24px;
+  --h1-bold-line-height: 130%;
+  --h1-bold-font-weight: 400;
+  --h1-bold-font-style: normal;
+  --title-font-family: SvnGilroy-Regular, sans-serif;
+  --title-font-size: 17px;
+  --title-line-height: 130%;
+  --title-font-weight: 400;
+  --title-font-style: normal;
+  --title-bold-font-family: SvnGilroy-Heavy, sans-serif;
+  --title-bold-font-size: 17px;
+  --title-bold-line-height: 130%;
+  --title-bold-font-weight: 400;
+  --title-bold-font-style: normal;
+  --body-font-family: SvnGilroy-Regular, sans-serif;
+  --body-font-size: 12px;
+  --body-line-height: 130%;
+  --body-font-weight: 400;
+  --body-font-style: normal;
+  --body-bold-font-family: SvnGilroy-Heavy, sans-serif;
+  --body-bold-font-size: 12px;
+  --body-bold-line-height: 130%;
+  --body-bold-font-weight: 400;
+  --body-bold-font-style: normal;
+  --caption-font-family: SvnGilroy-Regular, sans-serif;
+  --caption-font-size: 9px;
+  --caption-line-height: 130%;
+  --caption-font-weight: 400;
+  --caption-font-style: normal;
+  --caption-bold-font-family: SvnGilroy-Heavy, sans-serif;
+  --caption-bold-font-size: 9px;
+  --caption-bold-line-height: 130%;
+  --caption-bold-font-weight: 400;
+  --caption-bold-font-style: normal;
+  --sub-cap-font-family: SvnGilroy-Regular, sans-serif;
+  --sub-cap-font-size: 6px;
+  --sub-cap-line-height: 130%;
+  --sub-cap-font-weight: 400;
+  --sub-cap-font-style: normal;
+  --sub-cap-bold-font-family: SvnGilroy-Heavy, sans-serif;
+  --sub-cap-bold-font-size: 6px;
+  --sub-cap-bold-line-height: 130%;
+  --sub-cap-bold-font-weight: 400;
+  --sub-cap-bold-font-style: normal;
+
+  /* Effects */
+}
+/* Figma Color Variables of your File */
