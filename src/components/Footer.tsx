@@ -59,7 +59,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="mt-8 px-4 box-border border-t-2 border-[#fff1] py-[29px] text-center text-k-white-50 text-body">
-                <p>© 2025 VIEGAME, LLC. VIEGAME and any associated logos are trademarks, service marks, and/or registered trademarks of VIEGAME, LLC.</p>
+                <p>© 2025 VIEGAME LLC. VIEGAME and any associated logos are trademarks, service marks, and/or registered trademarks of VIEGAME LLC.</p>
             </div>
         </footer>
     );
