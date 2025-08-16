@@ -1,37 +1,19 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import SplitText from 'gsap/SplitText';
+import { useRef } from 'react';
 
 // Register GSAP plugins
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, SplitText, useGSAP);
 
 export default function GameStorySection() {
     const storyRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        if (!storyRef.current) return;
-        const paragraphs = storyRef.current.querySelectorAll('div');
-
-        // Split text into characters for each paragraph
-        paragraphs.forEach((paragraph) => {
-            const text = paragraph.textContent || '';
-            const chars = text.split('');
-
-            // Wrap each character in a span with typewriter effect
-            paragraph.innerHTML = chars
-                .map(char => {
-                    if (char === ' ') {
-                        return '<span class="inline-block">&nbsp;</span>';
-                    }
-                    return `<span class="inline-block opacity-0">${char}</span>`;
-                })
-                .join('');
-        });
-
-        // Create one master timeline for sequential paragraph animation
-        const masterTimeline = gsap.timeline({
+    useGSAP(() => {
+        const timeline = gsap.timeline({
             scrollTrigger: {
                 trigger: storyRef.current,
                 start: "top 80%",
@@ -39,30 +21,16 @@ export default function GameStorySection() {
                 toggleActions: "play none none none"
             }
         });
-
-        // Add each paragraph to the master timeline sequentially
-        paragraphs.forEach((paragraph, index) => {
-            const charSpans = paragraph.querySelectorAll('span');
-
-            // Add typewriter animation for this paragraph
-            masterTimeline.to(charSpans, {
-                opacity: 1,
-                duration: 0.5,
-                ease: "none",
-                stagger: {
-                    amount: 2.0, // Time to complete each paragraph
-                    from: "start"
-                }
-            })
-                .to({}, {
-                    duration: index === paragraphs.length - 1 ? 0 : 0.5,
-                });
+        const splitText = new SplitText(storyRef.current, { type: 'words' });
+        timeline.from(splitText.words, {
+            opacity: 0,
+            duration: .5,
+            ease: "none",
+            stagger: {
+                amount: 4.0, // Time to complete each paragraph
+                from: "start"
+            }
         });
-
-        // Cleanup function
-        return () => {
-            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-        };
     }, []);
 
     return (

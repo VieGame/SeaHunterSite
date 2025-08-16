@@ -14,7 +14,7 @@ export default function Header() {
         <header className="bg-[#3C5DAF80] border-b-[1px] border-b-white backdrop-blur-[10px] fixed w-screen top-0 z-50">
             <div className="container mx-auto px-4 py-[18px] max-w-[1200px]">
                 <div className="flex items-center justify-between">
-                    <div className='flex-1/6'>
+                    <div className='flex-1/3'>
                         <Link href='/' className="flex items-center w-fit gap-[6px]">
                             <Image
                                 src="/img/logo.svg"
@@ -41,7 +41,7 @@ export default function Header() {
                         <Link href="/#news">News</Link>
                         <Link href="/#download">Download</Link>
                     </nav>
-                    <div className='hidden lg:block flex-1/6'>
+                    <div className='hidden lg:block flex-1/3'>
 
                     </div>
 

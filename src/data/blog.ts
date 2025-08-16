@@ -44,7 +44,7 @@ export class BlogService {
         const { page = 1, limit = 10, sort = 'publishDate:desc', category, tag, author, search, dateFrom, dateTo } = params;
 
         // Build query
-        let query = BlogModel.find();
+        let query = BlogModel.find<BlogDocument>();
 
         query = query.where({ status: 'published' });
 
