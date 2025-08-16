@@ -1,7 +1,7 @@
 'use client';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { newsletterFormSchema, NewsletterFormData } from '@/lib/validation/contact';
+import { newsletterFormSchema, NewsletterFormData } from '@/lib/validations';
 import { useNewsletterFormSubmission } from '@/hooks/useFormSubmission';
 import { useEffect } from 'react';
 import CheckIcon from './icon/CheckIcon';

@@ -3,7 +3,7 @@ import ContactMessage from '@/models/ContactMessage';
 import { sendContactNotificationEmail, sendContactConfirmationEmail } from '@/data/email';
 import connectDB from '@/lib/mongodb';
 import { extractNameFromEmail, getClientIP } from '@/lib/util';
-import { newsletterApiSchema } from '@/lib/validation/contact';
+import { newsletterApiSchema } from '@/lib/validations';
 
 export async function POST(request: NextRequest) {
     try {

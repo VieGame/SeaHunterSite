@@ -1,9 +1,9 @@
-import { BlogClientSafe } from '@/types/blog/base';
+import { BlogDocument } from '@/types/blog/base';
 import moment from 'moment';
 import { getCldImageUrl } from 'next-cloudinary';
 
 interface BlogCardProps {
-    blog: BlogClientSafe;
+    blog: BlogDocument;
 }
 
 export default function BlogCard({ blog }: BlogCardProps) {

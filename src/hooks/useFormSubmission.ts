@@ -1,4 +1,4 @@
-import { NewsletterFormData } from '@/lib/validation/contact';
+import { NewsletterFormData } from '@/lib/validations';
 import { useState } from 'react';
 
 interface ApiResponse {

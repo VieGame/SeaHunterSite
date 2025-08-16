@@ -12,8 +12,8 @@ export default function Footer() {
     const HELP_CENTER_LINK = process.env.NEXT_PUBLIC_WEBSITE_URL + '/contact' || '#';
 
     return (
-        <footer className="pt-[70px] pb-[102px] border-t border-t-[#21262D]">
-            <div>
+        <footer className="border-t border-t-[#21262D]">
+            <div className='pt-[70px] pb-[102px]'>
                 <div className="container mx-auto max-w-[1200px] px-4 box-border">
                     <div className="flex flex-col lg:flex-row gap-[50px] xl:gap-[84px]">
                         <div className='xl:col-span-1 flex flex-col items-start gap-[25px]'>
@@ -56,11 +56,10 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-
                 </div>
-                {/* <div className="mt-8 px-4 box-border border-t-2 border-[#fff1] py-[29px] text-center text-k-white-50 text-body">
-                    <p>© 2025 VIEGAME, LLC. VIEGAME and any associated logos are trademarks, service marks, and/or registered trademarks of VIEGAME, LLC.</p>
-                </div> */}
+            </div>
+            <div className="mt-8 px-4 box-border border-t-2 border-[#fff1] py-[29px] text-center text-k-white-50 text-body">
+                <p>© 2025 VIEGAME, LLC. VIEGAME and any associated logos are trademarks, service marks, and/or registered trademarks of VIEGAME, LLC.</p>
             </div>
         </footer>
     );
